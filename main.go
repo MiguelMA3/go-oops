@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	c := composition.NewCar("a", 600, 123)
-	fmt.Println(c.HP())
-	fmt.Println(c.WheelDimension())
+	c := composition.NewCar("a", "b", "c", 600, 123)
+	fmt.Println(c.EngineName())
+	fmt.Println(c.WheelName())
 }
