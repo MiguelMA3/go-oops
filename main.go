@@ -3,11 +3,15 @@ package main
 import (
 	"fmt"
 
-	"github.com/MiguelMA3/go-oops/composition"
+	"github.com/MiguelMA3/go-oops/structs"
 )
 
 func main() {
-	c := composition.NewCar("a", "b", "c", 600, 123)
-	fmt.Println(c.EngineName())
-	fmt.Println(c.WheelName())
+	p1 := structs.NewPerson("Obi-wan", "Kenobi", 33)
+	//p2 := structs.NewPerson("Mace", "Windu", 46)
+	p3 := structs.NewPerson("Obi-wan", "Kenobi", 33)
+
+	if p1 == p3 {
+		fmt.Println("Both the structs are equal")
+	}
 }
